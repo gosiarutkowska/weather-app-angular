@@ -4,7 +4,7 @@
 
 INSTALATION: 
 
-- After cloned repository go to 'app-weather' folder and run *npm install*
+- After cloned repository go to 'weather-app' folder and run *npm install*
 
 LAUNCH 
 - Paste key for AgmCoreModule in App.module
