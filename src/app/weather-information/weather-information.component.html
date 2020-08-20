@@ -1,0 +1,12 @@
+<section class="weather-information">
+
+    <div class="weather-information-card" *ngFor="let day of data">
+      <h3>{{day[0]}}</h3>
+      <span><b>Temperature:</b> {{day[1][0].temp }} [K]</span>
+      <span><b>Temperature min.:</b> {{day[1][0].temp_min}} [K]</span>
+      <span><b>Temperature max.:</b> {{day[1][0].temp_max}} [K]</span>
+      <span><b>Humidity:</b> {{day[1][0].humidity}}</span>
+    </div>
+  <button mat-button (click)="newSearch()">New search</button>
+</section>
+

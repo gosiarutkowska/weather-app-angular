@@ -1,0 +1,20 @@
+<section class="search-city-input">
+  <div class="search-city-input-cta">
+    <mat-form-field>
+      <mat-label>Type place to search forecast</mat-label>
+      <input
+        name="city"
+        [(ngModel)]="cityToSearch"
+        matInput
+        placeholder="Ex. London"
+        matGoogleMapsAutocomplete
+        (onAutocompleteSelected)="getCityName($event)">
+    </mat-form-field>
+    <button
+      mat-button
+      [disabled]="!cityToSearch"
+      (click)="goToResultPage()">Search
+    </button>
+  </div>
+</section>
+
